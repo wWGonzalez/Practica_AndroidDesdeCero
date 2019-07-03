@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        android:importantForAutofill="no" tools:targetApi="o" />
 
     <EditText
         android:id="@+id/txtSegundoNumero"
@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPrimerNumero"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        android:importantForAutofill="no" tools:targetApi="o" />
 
     <TextView
         android:id="@+id/textViewResultado"
@@ -84,5 +84,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSegundoNumero"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        android:importantForAutofill="no" tools:targetApi="o" />
 </androidx.constraintlayout.widget.ConstraintLayout>

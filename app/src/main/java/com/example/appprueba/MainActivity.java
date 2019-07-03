@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         if(promedio>=6){
             tv1.setText("Aprobado con: "+promedio.toString());
 
-        }else if(promedio<5){
+        }else if(promedio<6){
             tv1.setText("Reprobado con :"+promedio.toString());
         }
 
