@@ -27,20 +27,16 @@ public class MainActivity extends AppCompatActivity {
 
     }//Finaliza onCreate
 
+
     //metodo que realiza suma
     public void Suma(View view){
         //Convierte valores EditText a String
-        String valor1 = et1.getText().toString();
-        String valor2 = et2.getText().toString();
-
-        Integer num1 = Integer.parseInt(valor1); //Convierte valores a Ingeer
-        Integer num2 = Integer.parseInt(valor2);
+        Integer num1 = Integer.parseInt(et1.getText().toString());
+        Integer num2 = Integer.parseInt(et2.getText().toString());
 
         Integer suma = num1+num2; //Suma valores
 
-        String Resultado = String.valueOf(suma); //Convierte suma a String
-
-        tv1.setText(Resultado);//Muestra el resultado de la suma
+        tv1.setText(suma.toString());//Muestra el resultado de la suma
     }
 
 
