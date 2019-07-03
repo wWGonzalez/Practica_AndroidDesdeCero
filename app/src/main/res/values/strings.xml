@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">AppPrueba</string>
-    <string name="txtPrimerNumero">Matematica</string>
-    <string name="txtSegundoNumero">Fisica</string>
-    <string name="txtTercerNumero">Lenguaje</string>
-    <string name="button">Validar</string>
+    <string name="txtPrimerNumero">Primer Numero</string>
+    <string name="txtSegundoNumero">Segundo Numero</string>
+    <string name="radiobutton1">Suma</string>
+    <string name="radiobutton2">Resta</string>
+    <string name="button">Calcular</string>
     <string name="txt_view_Resultado">Resultado</string>
 </resources>

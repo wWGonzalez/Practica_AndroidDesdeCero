@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText et1;
     private EditText et2;
-    private EditText et3;
+    private RadioButton rb1;
+    private RadioButton rb2;
     private TextView tv1;
 
 
@@ -21,31 +23,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.ObtenerValores();
 
-        et1 = (EditText) findViewById(R.id.txtPrimerNumero);
-        et2 = findViewById(R.id.txtSegundoNumero);
-        et3 = findViewById(R.id.txtTercerNumero);
-        tv1 = findViewById(R.id.textViewResultado);
+
 
     }//Finaliza onCreate
 
+    public void ObtenerValores(){
+        et1 = findViewById(R.id.txtPrimerNumero);
+        et2 = findViewById(R.id.txtSegundoNumero);
+        tv1 = findViewById(R.id.textViewResultado);
 
-    //metodo que realiza suma
-    public void Evaluar(View view){
-        //Convierte valores EditText a String
+        rb1 = findViewById(R.id.radioButton1);
+        rb2 = findViewById(R.id.radioButton2);
+    }
+
+    public void Calcular(View view){
         Integer num1 = Integer.parseInt(et1.getText().toString());
         Integer num2 = Integer.parseInt(et2.getText().toString());
-        Integer num3 = Integer.parseInt(et3.getText().toString());
 
-        Integer promedio = (num1+num2+num3)/3; //Suma valores
-        if(promedio>=6){
-            tv1.setText("Aprobado con: "+promedio.toString());
+        Integer resultado;
 
-        }else if(promedio<6){
-            tv1.setText("Reprobado con :"+promedio.toString());
+        if (rb1.isChecked()==true){
+            resultado = num1+num2;
+            tv1.setText(resultado.toString());
+        }
+        else if(rb2.isChecked()==true){
+            resultado = num1-num2;
+            tv1.setText(resultado.toString());
         }
 
     }
+
+
 
 
 
