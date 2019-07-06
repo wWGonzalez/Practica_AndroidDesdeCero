@@ -1,0 +1,41 @@
+commit 7074d010818cc482bfa942764927918becc8633e
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Wed Jul 3 16:09:49 2019 -0600
+
+    Control Radio button video 14
+
+commit dbaa53b5a51f330c66e8ab36b3b62b7249b1a314
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Wed Jul 3 14:51:49 2019 -0600
+
+    Validar Notas Errores Coregidos
+
+commit 47b9d5dd12d89c0012e33895b30705ce2a4eb79b
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Wed Jul 3 14:49:24 2019 -0600
+
+    Uso de Variables String con Validacion Tres Notas
+
+commit d93accbfc88b125114bcd8d8f957938be1a88ccd
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Wed Jul 3 12:26:58 2019 -0600
+
+    Promedio de Tres numeros
+
+commit a74b8743905e2192d499c6800716fa1d6ac1ac28
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Wed Jul 3 11:22:43 2019 -0600
+
+    Suma de dos numeros Simplificado
+
+commit 73811a561dd80b0fa80dc9558687f6b3684b66c1
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Tue Jul 2 08:16:35 2019 -0600
+
+    Suma de Dos Numeros
+
+commit 697f68309b5cea114f2d5bb9e9569f71725e650e
+Author: wer <werner.e.2.g@gmail.com>
+Date:   Mon Jul 1 19:27:18 2019 -0600
+
+    Mensajes Emergentes con Toast
