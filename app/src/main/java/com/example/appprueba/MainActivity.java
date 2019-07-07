@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     //Etablecer Datos en Spiner
     private void Spiner(){
         String [] opciones = {"sumar","restar","multriplicar","dividir"};
-        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,opciones);
+        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this,R.layout.spinner_item,opciones);
         spinner1.setAdapter(adapter);
     }
 
