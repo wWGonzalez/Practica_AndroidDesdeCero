@@ -2,8 +2,6 @@
     <string name="app_name">AppPrueba</string>
     <string name="txtPrimerNumero">Primer Numero</string>
     <string name="txtSegundoNumero">Segundo Numero</string>
-    <string name="txt_view_CheckSuma">Suma</string>
-    <string name="txt_voew_CheckResta">Resta</string>
     <string name="button">Calcular</string>
-    <string name="txt_view_Resultado">Resultado</string>
+    <string name="tv1">Reusltado</string>
 </resources>

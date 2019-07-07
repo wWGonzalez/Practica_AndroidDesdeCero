@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText et1;
     private EditText et2;
-    private CheckBox check1;
-    private CheckBox check2;
+    private Spinner spinner1;
     private TextView tv1;
 
 
@@ -24,43 +25,60 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.obtenerComponentes();
-    }//Finaliza Obtener Componentes
+        this.Componetes();
+        this.Spiner();
 
-   private void obtenerComponentes(){
+
+    }//Finaliza onCreat this.obtenerComponentes();e
+
+
+    //Etablecer Datos en Spiner
+    private void Spiner(){
+        String [] opciones = {"sumar","restar","multriplicar","dividir"};
+        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,opciones);
+        spinner1.setAdapter(adapter);
+    }
+
+    //Obtener Componentes
+    private void Componetes(){
         et1 = findViewById(R.id.txtPrimerNumero);
         et2 = findViewById(R.id.txtSegundoNumero);
-        check1 = findViewById(R.id.checkBox);
-        check2 = findViewById(R.id.checkBox2);
         tv1 = findViewById(R.id.textViewResultado);
-   }//Finaliza
+        spinner1 = findViewById(R.id.spinner);
+    }//Finaliza Obtener Componetes
 
-
-
-
-
-   //Funcion del boton para evalual checkbox
 
     public void Evaluar(View view){
         Integer num1 = Integer.parseInt(et1.getText().toString());
         Integer num2 = Integer.parseInt(et2.getText().toString());
+        Integer resultado=0;
 
-        String resultado="";
+        String seleccion= spinner1.getSelectedItem().toString();
+        if(seleccion.equals("sumar")){
+            resultado = num1+num2;
+            tv1.setText(resultado.toString());
+        }else if(seleccion.equals("restar")){
+             resultado=num1-num2;
+            tv1.setText(resultado.toString());
+        }else if(seleccion.equals("multriplicar")){
+            resultado=num1*num2;
+            tv1.setText(resultado.toString());
+        }else if(seleccion.equals("dividir")){
+            if(num2.equals(0)){
+                Toast.makeText(this,"No se Puede dividir",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                resultado=num1/num2;
+                tv1.setText(resultado.toString());
+            }
 
-        if(check1.isChecked() == true){
-            Integer suma = num1 + num2;
-            resultado = "Suma : "+suma+" / ";
         }
-        if(check2.isChecked()){
-            Integer resta = num1 - num2;
-            resultado = resultado + "Resta :"+ resta + " / ";
-        }
 
-        tv1.setText(resultado);
+
+    }//Finaliza evaluar
 
 
 
-    }
 
 
 
