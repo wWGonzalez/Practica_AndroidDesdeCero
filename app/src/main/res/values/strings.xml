@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">AppPrueba</string>
-    <string name="txtPrimerNumero">Primer Numero</string>
-    <string name="txtSegundoNumero">Segundo Numero</string>
-    <string name="button">Calcular</string>
-    <string name="tv1">Reusltado</string>
+    <string name="textView1">Seleciona un nombre</string>
 </resources>
