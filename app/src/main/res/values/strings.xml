@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AppPrueba</string>
-    <string name="textView1">Seleciona un nombre</string>
+    <string name="btn1">Button1</string>
+    <string name="btn2">Button2</string>
 </resources>

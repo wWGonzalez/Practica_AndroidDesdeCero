@@ -16,50 +16,21 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv1; //TexView
-    private ListView lv1; //ListView
-
-    private String nombres [] = {"Samuel","Sofia","Marta","Valentina"};
-    private String edades [] = {"18","17","24","20"};
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.Componetes();
-
 
     }//Finaliza onCreate
 
+    public void botonGuate(View vew){
+        Toast.makeText(this,"Pressed Guatemala",Toast.LENGTH_SHORT).show();
+    }
 
-
-    //Obtener Componentes
-    private void Componetes(){
-        tv1 = findViewById(R.id.textView1);
-        lv1 = findViewById(R.id.listView1);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_nombres, nombres);
-        lv1.setAdapter(adapter);
-        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                tv1.setText("La edad de "+lv1.getItemAtPosition(i)+" Es:"+edades[i]+" Años");
-            }
-        });
-    }//Finaliza Obtener Componetes
-
-
-
-
-
-
-
-
-
-
+    public void botonSalvador(View view){
+        Toast.makeText(this,"Pressed Salvador",Toast.LENGTH_SHORT).show();
+    }
 
 
 }//Finaliza Clase
