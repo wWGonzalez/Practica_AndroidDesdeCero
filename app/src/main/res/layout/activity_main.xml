@@ -6,36 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton10"
+
+    <EditText
+        android:id="@+id/txtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/btn1"
-        android:onClick="botonGuate"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
-        app:layout_constraintHorizontal_bias="0.36"
+        android:layout_marginTop="72dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/gt" />
+        tools:targetApi="o" />
 
-    <ImageButton
-        android:id="@+id/imageButton12"
+
+    <EditText
+        android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/btn2"
-        android:onClick="botonSalvador"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/sv" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser"
+        tools:targetApi="o" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="Validar"
+        android:text="@string/button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
